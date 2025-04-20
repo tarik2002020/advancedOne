@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+@font-face {
+  font-family: season;
+  src: url(Fontspring-DEMO-theseasons-reg.otf);
+}
+@font-face {
+  font-family: garet;
+  src: url(Garet-Book.ttf);
+}
+body {
+  background-color: #d9eafd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  width: 60%;
+  height: 85vh;
+  background-color: rgb(50, 50, 47);
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.664);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.cover {
+  width: 100%;
+  border-radius: 20%;
+  left: -50%;
+  height: 100%;
+  position: absolute;
+  background-color: #8c9ced;
+  z-index: 1;
+  transition: all 0.6s ;
+}
+.left-cover {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+.right-cover {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  background-color: #f0f6fd;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  position: absolute;
+  position: relative;
+}
+.left-box,
+.right-box {
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.head {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+.inp,
+.rinp {
+  border: none;
+  background-color: #e0e6ecc2;
+  padding: 10px 130px 10px 10px;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+.inp:focus,
+.rinp:focus {
+  outline: none;
+}
+.inp::placeholder,
+.rinp::placeholder {
+  color: #606060ad;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  position: absolute;
+  left: 3%;
+}
+.fst-left-svg {
+  position: absolute;
+  right: 5%;
+  top: 21%;
+}
+.scd-left-svg {
+  position: absolute;
+  right: 5%;
+  top: 36.5%;
+}
+.thd-left-svg {
+  position: absolute;
+  right: 5%;
+  top: 52%;
+}
+svg {
+  fill: #444343;
+}
+.btn-regis {
+  background-color: #578fca;
+  padding: 10px 36%;
+  border-radius: 5px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+}
+.platforms > a > svg {
+  border: 1px solid #444343;
+  padding: 8px;
+  border-radius: 8px;
+}
+.platforms {
+  display: flex;
+  gap: 10px;
+  margin-top: -20px;
+}
+.para,
+.platforms {
+  margin-top: -10px;
+  margin-left: 10%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.platforms {
+  margin-top: -25px;
+}
+.right {
+  width: 50%;
+  background-color: #f0f6fd;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+.scd-right-svg {
+  position: absolute;
+  right: 5%;
+  top: 24%;
+}
+.thd-right-svg {
+  position: absolute;
+  right: 5%;
+  top: 39.5%;
+}
+.frgt {
+  color: #578fca;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 14px;
+  margin-top: -10px;
+}
+.rinp[type="submit"] {
+  background-color: #578fca;
+  padding: 10px 37%;
+  border-radius: 5px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: white;
+}
+.right-cover,
+.left-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  z-index: 2;
+}
+.cover-head {
+  font-family: season;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.cover-para {
+  font-family: garet;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-top: 10px;
+}
+.cover-btn {
+  padding: 5px 50px;
+  border: white 1px solid;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
